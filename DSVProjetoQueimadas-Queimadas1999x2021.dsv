@@ -1,0 +1,69 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="86a42628-01e5-43be-ae85-54f345875ce6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DSVProjetoQueimadas-Queimadas1999x2021</ID>
+  <Name>DSVProjetoQueimadas-Queimadas1999x2021</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DSNProjetoQueimadasDataMining</DataSourceID>
+  <Schema>
+    <xs:schema id="DSVProjetoQueimadas-Queimadas1999x2021" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DSVProjetoQueimadas-Queimadas1999x2021" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6887c329-9dfa-4064-aeab-af9e1f326920">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Queimadas1999x2021" msprop:DbTableName="Queimadas1999x2021" msprop:FriendlyName="Queimadas1999x2021" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="b78ef9e3-6453-4b88-be26-dff5549160db">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CodigoQueimada" msprop:FriendlyName="CodigoQueimada" msprop:DbColumnName="CodigoQueimada" msprop:design-time-name="1a563648-db64-4c82-8aed-7e7ec70fd591" type="xs:int" />
+                  <xs:element name="Precipitacao" msprop:FriendlyName="Precipitacao" msprop:DbColumnName="Precipitacao" msprop:design-time-name="50ce60c7-8f45-4348-83d2-79c54ffdedda" type="xs:double" />
+                  <xs:element name="DiaSemChuva" msprop:FriendlyName="DiaSemChuva" msprop:DbColumnName="DiaSemChuva" msprop:design-time-name="1594a266-f528-410e-a802-d13bb1a391e2" type="xs:unsignedByte" />
+                  <xs:element name="RiscoFogo" msprop:FriendlyName="RiscoFogo" msprop:DbColumnName="RiscoFogo" msprop:design-time-name="9228a749-5597-4441-b16a-5b7075f0275a" type="xs:double" />
+                  <xs:element name="Ocorrencias" msprop:FriendlyName="Ocorrencias" msprop:DbColumnName="Ocorrencias" msprop:design-time-name="f55bc2f0-f299-4b80-8a18-be6a7b0c2424" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Queimadas1999x2021" />
+          <xs:field xpath="CodigoQueimada" />
+        </xs:unique>
+      </xs:element>
+    </xs:schema>
+    <DSVProjetoQueimadas-Queimadas1999x2021 xmlns="" />
+  </Schema>
+</DataSourceView>
